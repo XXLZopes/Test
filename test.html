@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+
+  <style>
+    main{
+      width: 100%;
+      
+    }
+    .btn {
+      height: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 120px;
+      margin-bottom: 15px;
+      color: white;
+      background-color: rgb(29, 5, 77);
+      border-radius: 3px;
+      border: none;
+    }
+    .btn:hover {
+      background-color: rebeccapurple;
+    }
+    #problem{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #timer{
+      font-size: 25px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+
+</head>
+<body>
+  <div id='timer'></div>
+
+  <main>
+  <div id='problem'>
+    <h1 id='question'></h1>
+    <button id='a' class='btn'></button>
+    <button id='b' class='btn'></button>
+    <button id='c' class='btn'></button>
+    <button id='d' class='btn'></button>
+  </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
