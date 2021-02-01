@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <style>
+        /* main{
+            display: flex;
+            flex-direction: column;
+        } */
+        #score{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            border-bottom: 2px solid var(--light);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        <p class = "score">Your Score: __</p>
+        </div>
+    </header>
+    <main>
+        <h1>High Score</h1>
+        <br>
+        <div id='score'>
+        <p id='initials'></p>
+        <p id='highScore'></p>
+        </div>
+        <br>
+        <a href='./index.html'>
+            <input type="submit" value="To Home Page" />
+        </a>
+    </main>
+    <script src='./highscore.js'></script>
+</body>
+</html>
