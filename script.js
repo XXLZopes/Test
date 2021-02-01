@@ -5,7 +5,6 @@ let questions = [
     { question: "What is used to access a location in an array?", answer: "Index Rout Key Claw", answerCheck: 0 },
     { question: "What is the html landing page file named?", answer: "lp.html home.html front.html index.html", answerCheck: 3 },
     { question: "What is used to style an html page?", answer: "JS CSS API CRUD", answerCheck: 1 },
-    {question: "You have finished the test!", answer: "The Test Is Over"}
   ];
 let score = 0;
 let i = 0;
@@ -70,17 +69,19 @@ let goToNewPage = false;
 timer.textContent = 'Timer: ' + t + ' seconds';
 
 setInterval ( () => { 
-    if (t === 0 || i === questions.length - 1) {
+    if (t === 0 || i === questions.length) {
     clearInterval()
     finalScore = t+score;
     console.log('final score: ', finalScore)
     localStorage.setItem('recentScore', finalScore);
         t=-1;
         i++;
-    let initials;
-    while(!initials){
-    initials = prompt('What are your initials?');
-    }
+
+    
+        while(!initials){
+            var initials = prompt('What are your initials?');
+        }
+
     let check = localStorage.getItem('check');
 
     //if check = checked then there is a list of players
